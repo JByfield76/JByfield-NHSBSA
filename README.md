@@ -1,6 +1,8 @@
 # JByfield-NHSBSA
 To run this test, please follow these instructions: 
+
 1). Download into MS Visual Studio. 
+
 2). Open the Test.Runsettings file and change the value on the BrowserType tag to fit the browser you are wanting to run it on 
     The full list is as follows: 
         IE,
@@ -8,8 +10,10 @@ To run this test, please follow these instructions:
         FireFox,
         Chrome,
         ChromeHeadless
- 3). If needed reload/refresh the Nuget packages and manually point Visual Studio to the location of the Test.RunSettings file. 
- 4). Run the test from the Test Explorer. 
+
+3). If needed reload/refresh the Nuget packages and manually point Visual Studio to the location of the Test.RunSettings file. 
+
+4). Run the test from the Test Explorer. 
 
 The whole project uses C# Selenium, with the Page Object Models and Nunit. 
 The webdriver, along with the waits and alerts handlers are initiallised in the Base Class
