@@ -1,9 +1,13 @@
 # JByfield-NHSBSA
 To run this test, please follow these instructions: 
 
-1). Download into MS Visual Studio. 
+1). You will need MS Visual Studio installed, the basic community version will be ok. 
 
-2). Open the Test.Runsettings file and change the value on the BrowserType tag to fit the browser you are wanting to run it on 
+2). Unzip the files. 
+
+3). Open the .sln file with MS Visual Studio. You will need to restore the Nuget packages, there will be a yellow warning box towards the top of the screen for this. 
+
+4). Open the Test.Runsettings file and change the value on the BrowserType tag to fit the browser you are wanting to run it on 
     The full list is as follows: 
         IE,
         Remote,
@@ -11,9 +15,9 @@ To run this test, please follow these instructions:
         Chrome,
         ChromeHeadless
 
-3). If needed reload/refresh the Nuget packages and manually point Visual Studio to the location of the Test.RunSettings file. 
+5). If needed manually point Visual Studio to the location of the Test.RunSettings file. This will also solve 99% of all 'object not set to an instance of an object' errors as well. 
 
-4). Run the test from the Test Explorer. 
+6). Run the test from the Test Explorer. 
 
 The whole project uses C# Selenium, with the Page Object Models and Nunit. 
 The webdriver, along with the waits and alerts handlers are initiallised in the Base Class
